@@ -1,0 +1,18 @@
+	component sopc_system is
+		port (
+			clk_clk            : in    std_logic                     := 'X';             -- clk
+			reset_n_reset_n    : in    std_logic                     := 'X';             -- reset_n
+			sdram_addr_export  : out   std_logic_vector(12 downto 0);                    -- export
+			sdram_ba_export    : out   std_logic_vector(1 downto 0);                     -- export
+			sdram_cas_n_export : out   std_logic;                                        -- export
+			sdram_cke_export   : out   std_logic;                                        -- export
+			sdram_clk_clk      : out   std_logic;                                        -- clk
+			sdram_cs_n_export  : out   std_logic;                                        -- export
+			sdram_dq_export    : inout std_logic_vector(15 downto 0) := (others => 'X'); -- export
+			sdram_ldqm_export  : out   std_logic;                                        -- export
+			sdram_ras_n_export : out   std_logic;                                        -- export
+			sdram_udqm_export  : out   std_logic;                                        -- export
+			sdram_we_n_export  : out   std_logic                                         -- export
+		);
+	end component sopc_system;
+

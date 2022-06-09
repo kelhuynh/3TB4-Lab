@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Mon Mar 14 14:34:32 2022
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : tut4
+Top-level Entity Name : tut4
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 1757
+Total pins : 18
+Total virtual pins : 0
+Total block memory bits : 1,065,600
+Total DSP Blocks : 0
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 0
+Total DLLs : 0

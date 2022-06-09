@@ -1,0 +1,6 @@
+13:53:46 **** Clean-only build of configuration Nios II for project blinky_bsp ****
+make clean 
+[BSP clean complete]
+
+13:53:49 Build Finished (took 3s.597ms)
+

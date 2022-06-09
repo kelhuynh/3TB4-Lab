@@ -1,0 +1,8 @@
+CLR r1      ; clear register 1
+CLR r0      ; clear register 0
+SR0 #8      ; set register 0 lower bits to b1000
+SRH0 #5     ; set register 0 higher bits b0101
+MOV r1 r0   ; move register 0 to register 1
+ADDI r1 #3  ; add 3 to register 1
+ADDI r1 #2	; add 2 to register 1
+MOV r0 r1   ; move register 1 to 0

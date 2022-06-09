@@ -1,0 +1,14 @@
+1. Error (10170): Verilog HDL syntax error at filename.v(2) near text "output";  expecting ";"
+
+Fix: You probably forget the ";" after the initial "module ..." line
+or whatever line is above where Quartus II places you when you double click the error.
+
+2. Error (10170): Verilog HDL syntax error at filename.v(6) near text ";";  expecting a description
+
+Fix: You probably put a ";" after the "endmodule" keyword.  Delete the ";".  
+
+Remember you must put a ";" at the end of a "module ...;" line but NO ";" after the "endmodule" line.
+
+3. Error (10170): Verilog HDL syntax error at filename.v(13) near text ";";  expecting "endmodule"
+
+Fix: You probably put a ";" after an "end" keyword of a "begin" ... "end" block.  Same as "endmodule", no semi colon afterwards.

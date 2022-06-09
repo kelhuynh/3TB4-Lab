@@ -1,0 +1,27 @@
+CLR r0      ; clear register 0
+SR0 #2      ; r0 = 2
+SRH0 #3     ; r0 = 50
+MOV r3,r0   ; define delay 50/100th of a second = 1/2 second
+SR0 #1      ; register 0 = 1
+MOV r1 r0   ; register 1 = 1
+CLR r0      ; setup loop iterator
+SR0 #3      ; register 0 = 3
+MOVR r1     ; move 1 step clockwise
+BR #2		; branch 2 forwards to instruction 12
+BR #-6	    ; branch 6 backwards to instruction 5
+SUBI r0 #1  ; subtract 1 from r0
+PAUSE       ; pause 1/2 second
+BRZ #2      ; branch 2 forward if r0 = 0 to instruction 16
+BR #-6      ; branch 6 backwards to instruction 9
+SR0 #9      ; register 0 = -1
+MOV r1 r0   ; register 1 = -1
+BR #2		; branch 2 forwards to instruction 20
+BR #-8	    ; branch 8 backwards to instruction 11
+CLR r0      ; setup loop iterator
+SR0 #4      ; register 0 = 4
+MOVRHS r1   ; move 1 half step counter clockwise
+SUBI r0 #1  ; subtract 1 from r0
+PAUSE       ; pause 1/2 second
+BRZ #2      ; branch 2 forward if r0 = 0 to instruction 27
+BR #-4      ; branch 4 backwards to instruction 22
+BR #-8	    ; branch 8 backwards to instruction 19

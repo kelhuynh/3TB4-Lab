@@ -1,0 +1,3 @@
+module counter(input clk, input reset_n, start_n, stop_n, , output reg [19:0] ms_count);
+/* fill in your code here */
+endmodule
